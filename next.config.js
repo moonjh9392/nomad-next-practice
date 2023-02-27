@@ -19,6 +19,10 @@ const nextConfig = {
         source: '/api/movies', //유저가 보는 url
         destination: `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}`, //실제로 보내는 url
       },
+      {
+        source: '/api/movies/:id', //유저가 보는 url
+        destination: `https://api.themoviedb.org/3/movie/:id?api_key=${API_KEY}`, //실제로 보내는 url
+      },
     ];
   },
 };
